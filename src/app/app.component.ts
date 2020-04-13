@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bool';
+  
+ focusoutHandler(event) {
+  console.log("the value is" + event.target.value);
+}
 }
