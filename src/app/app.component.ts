@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'bool';
+  spanContent ='';
   
  focusoutHandler(event) {
   console.log("the value is" + event.target.value);
+  this.spanContent = event.target.value;
 }
+onBtnCLick(inp:HTMLTextAreaElement){
+    this.spanContent = inp.value;
+  }
 }

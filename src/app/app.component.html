@@ -1,10 +1,11 @@
 <div class="col-lg-6 header-height text-center ">
   <div class="input-group">
       
-      <input  placeholder="Search"  (keydown) = "focusoutHandler($event)" name="film" type="text" >
+      <input  placeholder="Search" #inp (kedown) = "focusoutHandler($event)" name="film" type="text" >
       <div class="input-group-btn">
-          <button  class="btn btn-default" type="submit">Search</button>
+          <button (click)="onBtnCLick(inp)"  class="btn btn-default" type="submit">Search</button>
       </div>
+      <span>Valore:{{spanContent}}</span>
   </div>
 </div>
 
