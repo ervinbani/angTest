@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bool';
-  spanContent ='';
+  title: string = 'bool';
+  spanContent: string ='';
   
  focusoutHandler(event) {
   console.log("the value is" + event.target.value);
