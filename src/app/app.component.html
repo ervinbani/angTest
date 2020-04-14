@@ -1,12 +1,11 @@
-<div class="col-lg-6 header-height text-center ">
-  <div class="input-group">
-      
-      <input  placeholder="Search" #inp (kedown) = "focusoutHandler($event)" name="film" type="text" >
-      <div class="input-group-btn">
-          <button (click)="onBtnCLick(inp)"  class="btn btn-default" type="submit">Search</button>
-      </div>
-      <span>Valore:{{spanContent}}</span>
-  </div>
-</div>
+<app-header></app-header>
+<div class="row ">
+  <div class="col-md-12 col-lg-12 text-center">
+      <app-search (user)="getInput($event)" ></app-search>
 
+      <h4>RISULTATI DELLA RICERCA</h4>
+  </div>
+  
+</div>
+<app-film-results></app-film-results>
 
